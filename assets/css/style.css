@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cuprum", serif;
+}
+
+html, body {
+    background-color: #FFC9D0;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 86px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    max-width: 1440px;
+    padding: 0px 10px;
+    z-index: 1000;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    margin-right: 40px;
+    margin-left: 40px;
+    cursor: pointer;
+    color: #FF376E;
+    position: relative;
+    text-decoration: none;
+}
+
+nav button::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 1px;
+    background-color: #FF376E;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav button:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.singup {
+    background-color: transparent;
+    border: 1px solid #FF376E;
+    border-radius: 50px;
+    padding: 12px 60px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #FF376E;
+
+    transition: all 0.3s ease;
+}
+
+.singup:hover {
+    background-color: rgba(255, 55, 110, 0.1);
+}
+
+/* Главная секция */
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-section .text {
+    text-align: center;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 86px 10px 0px 10px;
+}
+
+.main-section .text h2 {
+    font-size: 64px;
+    color: #FF376E;
+    margin-bottom: 70px;
+}
+
+.main-section .text p {
+    font-size: 18px;
+    color: #FF376E;
+    line-height: 2;
+}
+
+.main-section .text p span {
+    font-weight: bold;
+}
+
+/* Секция под главной */
+
+.under-main-section {
+    width: 100%;
+    background-color: #FF376E;
+    height: 132px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.icons p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.icons div {
+    text-align: center;
+}
+
+/* Секция "О нас" */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.about-section .text h2 {
+    font-size: 64px;
+    color: #FF376E;
+    margin-bottom: 70px;
+}
+
+.about-section .text p {
+    font-size: 18px;
+    color: #FF376E;
+    line-height: 2;
+}
+
+.about-section .text {
+    text-align: center;
+    width: 40%;
+}
+
+/* Cекция услуги */
+
+.services-section {
+    width: 100%;
+    background-color: #FF376E;
+    margin: 0 auto;
+    padding: 110px 0px 110px 0px;
+    text-align: center;
+    color: #fff;
+}
+
+.services-section h2 {
+    font-size: 64px;
+}
+
+.services {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-top: 116px;
+    padding: 0px 10px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Стили для Swiper-контейнера */
+.swiper-container {
+    display: none; /* По умолчанию скрыт */
+    margin-top: 116px;
+    position: relative;
+}
+
+.services-section .services div {
+    transition: transform 0.3s ease;
+}
+
+.services-section .services div:hover {
+    transform: scale(1.05);
+}
+
+.services h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.service-singup {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 12px 60px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 55px;
+
+    transition: all 0.3s ease;
+}
+
+.service-singup:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Секция "Наши мастера" */
+
+.mobile-masters-section {
+    display: none;
+}
+
+.masters-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 10px;
+    color: #FF376E;
+}
+
+.master-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.master-info.fade-out {
+    opacity: 0;
+}
+
+.text-btn {
+    text-align: center;
+    width: 37%;
+}
+
+.text-btn h2,
+.text-btn h3,
+.text-btn p {
+    margin-bottom: 91px;
+}
+
+.text-btn h2 {
+    font-size: 64px;
+}
+
+.text-btn h3 {
+    font-size: 40px;
+}
+
+.text-btn p {
+    line-height: 2;
+    font-size: 18px;
+}
+
+.masters-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1340px;
+    margin-top: 80px;
+}
+
+.masters-list .name-master {
+    background-color: transparent;
+    border: 1px solid #FF376E;
+    border-radius: 50px;
+    padding: 12px 60px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #FF376E;
+
+    transition: all 0.3s ease;
+}
+
+.masters-list .name-master:hover {
+    background-color: rgba(255, 55, 110, 0.1);
+}
+
+.name-master.active {
+    background-color: rgba(255, 55, 110, 0.1);
+}
+
+/* Футер */
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-section {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FF376E;
+    padding: 80px 10px 20px 10px;
+    color: #fff;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback {
+    background-color: #FFC9D0;
+    text-align: center;
+    color: #FF376E;
+    height: 339px;
+    max-width: 1340px;
+    padding: 40px 0px;
+    width: 100%;
+}
+
+.feedback h2{
+    font-size: 64px;
+    margin-bottom: 63px;
+}
+
+.feedback .singup {
+    background-color: transparent;
+    border: 1px solid #FF376E;
+    border-radius: 50px;
+    padding: 12px 60px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #FF376E;
+
+    transition: all 0.3s ease;
+}
+
+.feedback .singup:hover {
+    transform: scale(1.05);
+}
+
+.line {
+    height: 1px;
+    background-color: #FFC9D0;
+    width: 100%;
+    max-width: 1112px;
+    margin-top: 80px;
+}
+
+.line1 {
+    height: 1px;
+    background-color: #FF376E;
+    width: 100%;
+    max-width: 1440px;
+    margin-top: 80px;
+}
+
+.line2 {
+    height: 1px;
+    background-color: #FFC9D0;
+    width: 100%;
+    max-width: 1112px;
+}
+
+/* Контактная инфа */
+
+.contact-information {
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1112px;
+}
+
+.contact-information .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 637px;
+}
+
+.contact-information .info .sections a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+
+.contact-information .info div h4 {
+    font-size: 20px;
+    margin-bottom: 27px;
+}
+
+.contact-information .info div p {
+    margin-bottom: 9px;
+    font-size: 18px;
+}
+
+.contact-information .info a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 39px;
+}
+
+.author h3 {
+    font-size: 18px;
+}
+
+.author-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 12px 60px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.author-btn:hover {
+    transform: scale(1.05);
+}
+
+.contact-information .logo-instagram .messagers {
+    margin-top: 60px;
+}
+
+.contact-information .logo-instagram .messagers img {
+    margin-right: 20px;
+}
+
+/* Стили для бургер-меню */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000;
+}
+
+.burger-menu span {
+    width: 100%;
+    height: 3px;
+    background: #FF376E;
+    transition: all 0.3s ease;
+}
+
+.contact-information .mobile-info {
+    display: none;
+}

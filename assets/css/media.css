@@ -1,0 +1,564 @@
+
+/* Адаптация для 1300px */
+@media (max-width: 1300px) {
+    .main-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-section img {
+        margin-top: 20px;
+    }
+
+    .main-section img,
+    .about-section img {
+        width: 70%;
+        height: auto;
+    }
+
+    .main-section .text h2 {
+        margin-top: 50px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .master-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .master-photo1, .master-photo2 {
+        margin-top: 20px;
+    }
+
+    .masters-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .masters-section {
+        display: none;
+    }
+    
+    .mobile-masters-section {
+        display: block;
+    }
+
+    /* Раздел "Наши мастера" для мобильных устройств*/
+    .mobile-masters-section {
+        text-align: center;
+    }
+
+    .mobile-masters-section .mobile-master-info .masters-photos {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 10%;
+    }
+
+    .mobile-masters-section .mobile-master-info h2 {
+        font-size: 64px;
+        color: #FF376E;
+        margin-top: 110px;
+        margin-bottom: 30px;
+    }
+
+    .mobile-masters-section .mobile-master-info .mobile-text-btn {
+        color: #FF376E;
+        margin-top: 30px;
+    }
+
+    .mobile-masters-section .mobile-master-info .mobile-text-btn h3 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .mobile-masters-section .mobile-master-info .mobile-text-btn p {
+        margin-bottom: 30px;
+    }
+
+    .add-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центрирование по горизонтали */
+        text-align: center; /* Центрирование текста внутри элементов */
+    }
+
+    .mobile-masters-list {
+        margin: 50px 0px 30px 0px;
+        display: flex;
+        gap: 30px;
+        justify-content: center; /* Центрирование кнопок по горизонтали */
+    }
+
+    .mobile-line1 {
+        height: 1px;
+        background-color: #FF376E;
+        width: 85%;
+        margin: 50px auto 0; /* Центрирование линии */
+    }
+
+    .mobile-masters-list .name-master {
+        background-color: transparent;
+        border: 1px solid #FF376E;
+        border-radius: 50px;
+        padding: 12px 60px;
+        font-size: 18px;
+        cursor: pointer;
+        color: #FF376E;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-masters-list .name-master:hover {
+        background-color: rgba(255, 55, 110, 0.1);
+    }
+
+    .mobile-masters-list.active {
+        background-color: rgba(255, 55, 110, 0.1);
+    }
+}
+
+/* Адаптация для 1100px */
+@media (max-width: 1100px) {
+    .main-section .text h2 {
+        margin-top: 50px;
+    }
+
+    .about-section .text h2 {
+        margin-top: 30px;
+    }
+
+    .under-main-section .icons {
+        gap: 10%;
+    }
+
+    .icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    
+
+    .feedback h2 {
+        font-size: 48px;
+    }   
+}
+
+@media (max-width: 1081px) {
+    .services {
+        display: none;
+    }
+
+    .swiper-container {
+        display: block;
+    }
+
+    .mobile-masters-section .add-content .mobile-masters-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 964px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 86px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links button {
+        margin: 10px 0;
+    }
+
+    .footer-section .contact-information .logo-instagram a img{
+        width: 70%;
+    }
+
+    .footer-section .contact-information .logo-instagram .messagers a img{
+        height: 35px;
+        width: 35px;
+    }
+
+    .footer-section .contact-information .info div h4{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .footer-section .contact-information .info div p{
+        font-size: 16px;
+    }
+
+    .footer-section .contact-information .info .sections a{
+        font-size: 16px;
+    }
+}
+
+/* Адаптация для 900px */
+@media (max-width: 900px) {
+    .main-section .text h2 {
+        margin-top: 50px;
+        font-size: 48px;
+    }
+
+    .about-section .text p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .about-section .text {
+       width: 70%;
+    }
+
+    .under-main-section .icons {
+        gap: 10%;
+    }
+
+    .about-section .text h2 {
+        font-size: 48px;
+        margin-bottom: 30px;
+    }
+
+    .main-section img,
+    .about-section img {
+        width: 70%;
+        height: auto;
+    }
+
+    .services-section h2 {
+        font-size: 48px;
+    }
+
+    .text-btn h2 {
+        font-size: 48px;
+    }
+
+    .feedback h2 {
+        font-size: 36px;
+    }
+}
+
+/* Адаптация для 700px */
+@media (max-width: 709px) {
+    .main-section .text h2 {
+        font-size: 40px;
+    }
+
+    .main-section img,
+    .about-section img {
+        width: 70%;
+        height: auto;
+    }
+
+    .about-section .text p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .about-section .text {
+       width: 70%;
+    }
+
+    .about-section .text h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .services-section h2 {
+        font-size: 36px;
+    }
+
+    .services-section {
+        padding: 30px 0px 30px 0px;
+    }
+
+    .swiper-container {
+        margin-top: 30px;
+    }
+
+    .under-main-section .icons {
+        gap: 10%;
+    }
+
+    .text-btn h2 {
+        font-size: 36px;
+    }
+
+    .feedback h2 {
+        font-size: 32px;
+    }
+
+    .contact-information .info div h4 {
+        font-size: 18px;
+    }
+
+    .contact-information .info div p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 684px) {
+    .mobile-masters-section .mobile-master-info .masters-photos div img {
+        width: 200px;
+    }
+
+    .footer-section {
+        padding-top: 30px;
+    }
+
+    .line {
+        margin-top: 30px;
+    }
+
+    .contact-information {
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-section .contact-information .logo-instagram a img {
+        width: 120px;
+    }
+
+    .footer-section .contact-information .logo-instagram .messagers a img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .footer-section .contact-information .logo-instagram .messagers {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 525px) {
+    .menu a img {
+        width: 120px;
+        height: 30px;
+    }
+
+    .menu .singup {
+        padding: 6px 30px;
+        font-size: 14px;
+    }
+
+    .about-section .text h2 {
+        margin-bottom: 30px;
+    }
+
+    .about-section .text {
+        width: 70%;
+    }
+
+    .under-main-section .icons {
+        gap: 10%;
+    }
+
+    .under-main-section .icons div {
+        width: 80px;
+        text-align: center;
+    }
+
+    .under-main-section .icons div img {
+        height: 45px;
+        width: 45px;
+    }
+
+    .under-main-section .icons div p {
+        font-size: 14px;
+    }
+
+    .feedback {
+        height: 260px;
+    }
+
+}
+
+@media (min-width: 526px) {
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 120px !important;
+        left: auto;
+    }
+
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 120px !important;
+        right: auto;
+    }
+}
+
+/* Для экранов шириной от 376px до 525px */
+@media (max-width: 525px) and (min-width: 376px) {
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 40px !important;
+        left: auto;
+    }
+
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 40px !important;
+        right: auto;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .main-section .text h2 {
+        font-size: 40px;
+    }
+
+    .about-section .text h2 {
+        font-size: 32px;
+    }
+
+    .services-section h2 {
+        font-size: 32px;
+    }
+
+    .text-btn h2 {
+        font-size: 32px;
+    }
+
+    .feedback h2 {
+        font-size: 32px;
+    }
+
+    .masters-list .name-master {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .contact-information .info div h4 {
+        font-size: 16px;
+    }
+
+    .contact-information .info div p {
+        font-size: 14px;
+    }
+
+    .author {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .author-btn {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 456px) {
+    .footer-section .contact-information .info div h4{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .footer-section .contact-information .info div p{
+        font-size: 13px;
+    }
+
+    .footer-section .contact-information .info .sections a {
+        font-size: 13px;
+    }
+    
+}
+
+@media (max-width: 456px) {
+    .mobile-masters-section .mobile-master-info .masters-photos div img {
+        width: 130px;
+    }
+
+    .mobile-masters-section .mobile-master-info h2 {
+        font-size: 32px;
+        margin-top: 30px;
+    }
+
+    .mobile-masters-section .mobile-master-info .mobile-text-btn h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 396px) {
+    .footer-section .feedback h2{
+        font-size: 23px;
+        margin-bottom: 40px;
+    }
+
+    .contact-information .info {
+        display: none;
+    }
+
+    .contact-information .mobile-info {
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    .sections{
+        margin-bottom: 20px;
+    }
+
+    .address {
+        margin-bottom: 37px;
+    }
+
+    .contact-information .mobile-info .sections a{
+        text-decoration: none;
+        display: inline-block;
+        color: #fff;
+        font-size: 13px;
+        margin-bottom: 9px;
+    }
+    
+    .contact-information .mobile-info div h4 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-information .mobile-info div p {
+        margin-bottom: 9px;
+        font-size: 13px;
+    }
+    
+    .contact-information .mobile-info a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .footer-section .author h3 {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .swiper-button-next, .swiper-rtl .swiper-button-prev,
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        display: none;
+    }
+}
